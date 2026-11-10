@@ -1,0 +1,8 @@
+include README.md
+include pyproject.toml
+include setup.py
+include conftest.py
+recursive-include pyspamsum *.pyx *.c *.py
+recursive-include tests *.py
+recursive-include examples *.py
+recursive-include tools *.py

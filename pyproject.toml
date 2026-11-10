@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "Cython>=3.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyspamsum"
+version = "1.0.0"
+description = "SpamSum fuzzy hashing with a Cython core and pure-Python scoring/comparison"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["spamsum", "ssdeep", "fuzzy hashing", "cython", "similarity"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Cython",
+    "Topic :: Security",
+    "Topic :: System :: Filesystems",
+]
+
+[tool.setuptools]
+packages = ["pyspamsum"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
